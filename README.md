@@ -28,6 +28,8 @@ params = {
 
 ```
 ## Metrics
+![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+
 - **Proportional parity (prop_parity)**
 
 Proportional parity is achieved if the proportion of positive predictions in the subgroups are close to each other. This measure does not depend on the true labels. 
