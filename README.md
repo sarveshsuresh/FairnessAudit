@@ -31,6 +31,7 @@ params = {
 
 ## Functions
 ### Build Model Check Fairness Multiclass
+Does pre-processing, builds required model, makes prediction on unseen data and evaluates fairness metric required.
 ```
 build_model_check_fairness_multiclass(dfr,target,model,test_size,sens,metric,reference,threshold)
 
@@ -42,6 +43,21 @@ build_model_check_fairness_multiclass(dfr,target,model,test_size,sens,metric,ref
 - **test_size**: Proportion of rows assigned to the **Test Set** while performing train-test-split
 - **sens**: Name of the sensitive variable
 - **metric**: Desired metric
+- **reference**: The level of the target variable that is considered to be the positive class. All other classes are considered negative.
+- **threshold** : The level of significance to be considered for the statistical test of proportions (metrics) to evaluate fairness.
+
+### All Metric Fairness
+Does pre-processing, builds required model, makes prediction on unseen data and evaluates all the fairness metrics.
+```
+all_metric_fairness(dfr,target,model,test_size,sens,reference,threshold)
+
+```
+#### Parameters
+- **dfr**: Raw DataSet
+- **target**: Target Variable (Variable that needs to be predicted)
+- **model**: Model Code of model desired
+- **test_size**: Proportion of rows assigned to the **Test Set** while performing train-test-split
+- **sens**: Name of the sensitive variable
 - **reference**: The level of the target variable that is considered to be the positive class. All other classes are considered negative.
 - **threshold** : The level of significance to be considered for the statistical test of proportions (metrics) to evaluate fairness.
 
