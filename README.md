@@ -61,6 +61,6 @@ all_metric_fairness(dfr,target,model,test_size,sens,reference,threshold)
 - **reference**: The level of the target variable that is considered to be the positive class. All other classes are considered negative.
 - **threshold** : The level of significance to be considered for the statistical test of proportions (metrics) to evaluate fairness.
 
-##Exception Handling
+## Exception Handling
 '**Model too Simplistic**' is returned when the model makes constant prediction (For example, All test cases are predicted as 'Yes') for the entire test set or there are no metrics to be compared at all (For example, metric for Males can be calculated but model makes constant prediction for Females).
 
