@@ -28,7 +28,7 @@ params = {
 
 ```
 ## Metrics
-![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+![This is an image]([https://myoctocat.com/assets/images/base-octocat.svg](https://github.com/sarveshsuresh/FairnessAudit/blob/main/image-6.png))
 
 - **Proportional parity (prop_parity)**
 
