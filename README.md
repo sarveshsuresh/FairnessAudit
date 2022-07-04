@@ -34,43 +34,43 @@ Proportional parity is achieved if the proportion of positive predictions in the
 
 Formula: (TP + FP) / (TP + FP + TN + FN) 
 
-- **Equalized odds (equalized_odds) **
+- **Equalized odds (equalized_odds)**
 
 Equalized odds are achieved if the sensitivities in the subgroups are close to each other. The group-specific sensitivities indicate the number of the true positives divided by the total number of positives in that group. 
 
 Formula: TP / (TP + FN) 
 
-- **Predictive rate parity (pred_rate_parity) **
+- **Predictive rate parity (pred_rate_parity)**
 
 Predictive rate parity is achieved if the precisions (or positive predictive values) in the subgroups are close to each other. The precision stands for the number of the true positives divided by the total number of examples predicted positive within a group. 
 
 Formula: TP / (TP + FP) 
 
-- **Accuracy parity (accuracy_parity) **
+- **Accuracy parity (accuracy_parity)**
 
 Accuracy parity is achieved if the accuracies (all accurately classified examples divided by the total number of examples) in the subgroups are close to each other. 
 
 Formula: (TP + TN) / (TP + FP + TN + FN) 
 
-- **False negative rate parity (false_negrate_parity) **
+- **False negative rate parity (false_negrate_parity)**
 
 False negative rate parity is achieved if the false negative rates (the ratio between the number of false negatives and the total number of positives) in the subgroups are close to each other. 
 
 Formula: FN / (TP + FN) 
 
-- **False positive rate parity (false_posrate_parity) **
+- **False positive rate parity (false_posrate_parity)**
 
 False positive rate parity is achieved if the false positive rates (the ratio between the number of false positives and the total number of negatives) in the subgroups are close to each other. 
 
 Formula: FP / (TN + FP) 
 
-- **Negative predictive value parity (neg_predval_parity) **
+- **Negative predictive value parity (neg_predval_parity)**
 
 Negative predictive value parity is achieved if the negative predictive values in the subgroups are close to each other. The negative predictive value is computed as a ratio between the number of true negatives and the total number of predicted negatives. This function can be considered the ‘inverse’ of the predictive rate parity. 
 
 Formula: TN / (TN + FN) 
 
-- **Specificity parity (specificity_parity) **
+- **Specificity parity (specificity_parity)**
 
 Specificity parity is achieved if the specificities (the ratio of the number of the true negatives and the total number of negatives) in the subgroups are close to each other. This function can be considered the ‘inverse’ of the equalized odds. 
 
